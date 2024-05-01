@@ -1,0 +1,1057 @@
+Time,Level,Event ID,Event,Tag(s),Event Origin,Target,Action By,Manager,Description,IP
+"April 20, 2024 14:57:29",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 14:57:15
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.105.100 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.105.100 is being automatically blocked for 1,800 seconds.",159.192.105.100
+"April 20, 2024 14:52:19",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bSrvRecibo,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 14:52:16
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 220.133.20.40 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 220.133.20.40 is being automatically blocked for 1,800 seconds.",220.133.20.40
+"April 20, 2024 14:51:34",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,SMTPSVRCFDINET.ams.local,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 14:51:32
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 114.32.100.73 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 114.32.100.73 is being automatically blocked for 1,800 seconds.",114.32.100.73
+"April 20, 2024 14:50:58",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 14:50:51
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 77.107.131.96 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 77.107.131.96 is being automatically blocked for 1,800 seconds.",77.107.131.96
+"April 20, 2024 14:48:57",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DBserverRe-QA,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 14:48:53
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 177.85.224.93 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 177.85.224.93 is being automatically blocked for 1,800 seconds.",177.85.224.93
+"April 20, 2024 14:46:33",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,srvhsprdblue03.humansite.int,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 14:46:29
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 220.133.92.196 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 220.133.92.196 is being automatically blocked for 1,800 seconds.",220.133.92.196
+"April 20, 2024 14:45:11",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bserverRE-QA,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 14:45:07
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 114.32.100.73 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 114.32.100.73 is being automatically blocked for 1,800 seconds.",114.32.100.73
+"April 20, 2024 14:44:28",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 14:44:15
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.104.79 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.104.79 is being automatically blocked for 1,800 seconds.",159.192.104.79
+"April 20, 2024 14:43:20",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DbserverRecibo,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 14:43:18
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 77.107.131.96 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 77.107.131.96 is being automatically blocked for 1,800 seconds.",77.107.131.96
+"April 20, 2024 14:36:39",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DbserverRecibo,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 14:36:35
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.105.100 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.105.100 is being automatically blocked for 1,800 seconds.",159.192.105.100
+"April 20, 2024 14:30:58",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bserverRE-QA,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 14:30:44
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 128.22.175.67 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 128.22.175.67 is being automatically blocked for 1,800 seconds.",128.22.175.67
+"April 20, 2024 14:27:50",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DbserverDev,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 14:27:47
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 74.218.29.74 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 74.218.29.74 is being automatically blocked for 1,800 seconds.",74.218.29.74
+"April 20, 2024 14:22:34",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bserverRE-QA,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 14:22:31
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 177.85.224.93 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 177.85.224.93 is being automatically blocked for 1,800 seconds.",177.85.224.93
+"April 20, 2024 14:20:01",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE-QA,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 14:19:47
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 1.34.85.243 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 1.34.85.243 is being automatically blocked for 1,800 seconds.",1.34.85.243
+"April 20, 2024 14:17:30",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DbserverRecibo,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 14:17:27
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 128.22.175.67 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 128.22.175.67 is being automatically blocked for 1,800 seconds.",128.22.175.67
+"April 20, 2024 14:14:40",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bserverRE-QA,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 14:14:36
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.104.79 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.104.79 is being automatically blocked for 1,800 seconds.",159.192.104.79
+"April 20, 2024 14:12:08",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bSrvRecibo,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 14:12:05
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 177.85.224.93 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 177.85.224.93 is being automatically blocked for 1,800 seconds.",177.85.224.93
+"April 20, 2024 14:09:46",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,appserverDev,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 14:09:43
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 59.126.252.139 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 59.126.252.139 is being automatically blocked for 1,800 seconds.",59.126.252.139
+"April 20, 2024 13:59:45",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DEV-002-Sb2bi,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 13:59:42
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 74.218.29.74 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 74.218.29.74 is being automatically blocked for 1,800 seconds.",74.218.29.74
+"April 20, 2024 13:51:30",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bSrvRecibo,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 13:51:29
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 128.22.175.67 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 128.22.175.67 is being automatically blocked for 1,800 seconds.",128.22.175.67
+"April 20, 2024 13:50:12",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE-QA,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 13:49:58
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 77.107.131.96 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 77.107.131.96 is being automatically blocked for 1,800 seconds.",77.107.131.96
+"April 20, 2024 13:49:39",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,appserverDev,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 13:49:35
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.104.79 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.104.79 is being automatically blocked for 1,800 seconds.",159.192.104.79
+"April 20, 2024 13:46:35",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE-QA,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 13:46:20
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.106.207 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.106.207 is being automatically blocked for 1,800 seconds.",159.192.106.207
+"April 20, 2024 13:45:58",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DbserverDev,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 13:45:55
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 114.32.100.73 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 114.32.100.73 is being automatically blocked for 1,800 seconds.",114.32.100.73
+"April 20, 2024 13:37:18",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,smtpserverhs.ams.local,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 13:37:15
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 74.218.29.74 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 74.218.29.74 is being automatically blocked for 1,800 seconds.",74.218.29.74
+"April 20, 2024 13:37:02",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DbserverRecibo,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 13:36:59
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 128.22.175.67 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 128.22.175.67 is being automatically blocked for 1,800 seconds.",128.22.175.67
+"April 20, 2024 13:32:29",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,SMTPSVRCFDINET.ams.local,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 13:32:27
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 218.161.74.135 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 218.161.74.135 is being automatically blocked for 1,800 seconds.",218.161.74.135
+"April 20, 2024 13:31:48",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DEV-002-Sb2bi,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 13:31:46
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.104.79 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.104.79 is being automatically blocked for 1,800 seconds.",159.192.104.79
+"April 20, 2024 13:28:12",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DbserverRecibo,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 13:28:08
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 59.126.252.139 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 59.126.252.139 is being automatically blocked for 1,800 seconds.",59.126.252.139
+"April 20, 2024 13:19:55",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DbserverDev,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 13:19:41
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.105.100 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.105.100 is being automatically blocked for 1,800 seconds.",159.192.105.100
+"April 20, 2024 13:16:36",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,appserverDev,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 13:16:33
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.106.207 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.106.207 is being automatically blocked for 1,800 seconds.",159.192.106.207
+"April 20, 2024 13:12:21",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 13:12:18
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 177.85.224.93 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 177.85.224.93 is being automatically blocked for 1,800 seconds.",177.85.224.93
+"April 20, 2024 13:08:51",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE-QA,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 13:08:37
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 128.22.175.67 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 128.22.175.67 is being automatically blocked for 1,800 seconds.",128.22.175.67
+"April 20, 2024 13:08:06",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,SMTPSVRCFDINET.ams.local,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 13:08:04
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 220.135.113.71 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 220.135.113.71 is being automatically blocked for 1,800 seconds.",220.135.113.71
+"April 20, 2024 13:07:11",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bSrvRecibo,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 13:07:08
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 128.22.175.67 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 128.22.175.67 is being automatically blocked for 1,800 seconds.",128.22.175.67
+"April 20, 2024 13:07:01",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bSrvRecibo,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 13:06:58
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 177.85.224.93 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 177.85.224.93 is being automatically blocked for 1,800 seconds.",177.85.224.93
+"April 20, 2024 12:59:22",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,SMTPSVRCFDINET.ams.local,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 12:59:19
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 220.133.92.196 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 220.133.92.196 is being automatically blocked for 1,800 seconds.",220.133.92.196
+"April 20, 2024 12:38:19",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DbserverRecibo,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 12:38:16
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.105.100 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.105.100 is being automatically blocked for 1,800 seconds.",159.192.105.100
+"April 20, 2024 12:30:02",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE-QA,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 12:29:47
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 14.136.23.194 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 14.136.23.194 is being automatically blocked for 1,800 seconds.",14.136.23.194
+"April 20, 2024 12:24:58",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE-QA,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 12:24:44
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.106.207 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.106.207 is being automatically blocked for 1,800 seconds.",159.192.106.207
+"April 20, 2024 12:24:25",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bSrvRecibo,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 12:24:22
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.104.79 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.104.79 is being automatically blocked for 1,800 seconds.",159.192.104.79
+"April 20, 2024 12:18:49",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bSrvRecibo,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 12:18:46
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 77.107.131.96 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 77.107.131.96 is being automatically blocked for 1,800 seconds.",77.107.131.96
+"April 20, 2024 12:18:47",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 12:18:43
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.105.100 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.105.100 is being automatically blocked for 1,800 seconds.",159.192.105.100
+"April 20, 2024 12:14:16",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bSrvRecibo,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 12:14:14
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.106.207 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.106.207 is being automatically blocked for 1,800 seconds.",159.192.106.207
+"April 20, 2024 12:11:05",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bserverRE-QA,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 12:11:00
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 128.22.175.67 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 128.22.175.67 is being automatically blocked for 1,800 seconds.",128.22.175.67
+"April 20, 2024 12:01:38",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bSrvRecibo,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 12:01:35
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 128.22.175.67 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 128.22.175.67 is being automatically blocked for 1,800 seconds.",128.22.175.67
+"April 20, 2024 11:55:11",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 11:55:08
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 114.32.100.73 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 114.32.100.73 is being automatically blocked for 1,800 seconds.",114.32.100.73
+"April 20, 2024 11:55:03",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE-QA,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 11:54:48
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.105.100 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.105.100 is being automatically blocked for 1,800 seconds.",159.192.105.100
+"April 20, 2024 11:44:21",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DBserverRe-QA,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 11:44:13
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 114.33.37.21 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 114.33.37.21 is being automatically blocked for 1,800 seconds.",114.33.37.21
+"April 20, 2024 11:43:11",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DbserverRecibo,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 11:43:08
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 1.34.85.243 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 1.34.85.243 is being automatically blocked for 1,800 seconds.",1.34.85.243
+"April 20, 2024 11:36:41",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 11:36:38
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.105.100 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.105.100 is being automatically blocked for 1,800 seconds.",159.192.105.100
+"April 20, 2024 11:35:44",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 11:35:41
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 77.107.131.96 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 77.107.131.96 is being automatically blocked for 1,800 seconds.",77.107.131.96
+"April 20, 2024 11:23:58",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DBserverRe-QA,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 11:23:39
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 114.33.11.178 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 114.33.11.178 is being automatically blocked for 1,800 seconds.",114.33.11.178
+"April 20, 2024 11:22:54",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bserverRE-QA,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 11:22:38
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 177.85.224.93 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 177.85.224.93 is being automatically blocked for 1,800 seconds.",177.85.224.93
+"April 20, 2024 11:15:40",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DbserverRecibo,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 11:15:36
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 128.22.175.67 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 128.22.175.67 is being automatically blocked for 1,800 seconds.",128.22.175.67
+"April 20, 2024 11:10:57",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bSrvRecibo,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 11:10:54
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 77.107.131.96 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 77.107.131.96 is being automatically blocked for 1,800 seconds.",77.107.131.96
+"April 20, 2024 11:06:11",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,srvhsprdblue03.humansite.int,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 11:06:07
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 1.34.85.243 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 1.34.85.243 is being automatically blocked for 1,800 seconds.",1.34.85.243
+"April 20, 2024 10:59:40",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,smtpserverhs.ams.local,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 10:59:37
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 174.57.71.99 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 174.57.71.99 is being automatically blocked for 1,800 seconds.",174.57.71.99
+"April 20, 2024 10:54:07",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,smtpserverhs.ams.local,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 10:54:04
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.106.207 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.106.207 is being automatically blocked for 1,800 seconds.",159.192.106.207
+"April 20, 2024 10:48:09",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE-QA,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 10:47:55
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 177.85.224.93 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 177.85.224.93 is being automatically blocked for 1,800 seconds.",177.85.224.93
+"April 20, 2024 10:30:58",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,SMTPSERVERENL.ams.local,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 10:30:56
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 59.126.252.139 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 59.126.252.139 is being automatically blocked for 1,800 seconds.",59.126.252.139
+"April 20, 2024 10:23:19",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE-QA,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 10:23:15
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 220.135.113.71 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 220.135.113.71 is being automatically blocked for 1,800 seconds.",220.135.113.71
+"April 20, 2024 10:18:48",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,SMTPSERVERENL.ams.local,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 10:18:45
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.105.100 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.105.100 is being automatically blocked for 1,800 seconds.",159.192.105.100
+"April 20, 2024 10:12:35",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bSrvRecibo,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 10:12:32
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 177.85.224.93 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 177.85.224.93 is being automatically blocked for 1,800 seconds.",177.85.224.93
+"April 20, 2024 10:11:20",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bserverRE-QA,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 10:11:17
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 220.135.113.71 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 220.135.113.71 is being automatically blocked for 1,800 seconds.",220.135.113.71
+"April 20, 2024 10:09:23",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bserverRE-QA,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 10:09:19
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.105.100 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.105.100 is being automatically blocked for 1,800 seconds.",159.192.105.100
+"April 20, 2024 10:06:50",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DBserverRe-QA,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 10:06:46
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.105.100 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.105.100 is being automatically blocked for 1,800 seconds.",159.192.105.100
+"April 20, 2024 09:58:36",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,SMTPSVRCFDINET.ams.local,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 09:58:33
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 59.126.252.139 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 59.126.252.139 is being automatically blocked for 1,800 seconds.",59.126.252.139
+"April 20, 2024 09:56:56",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DbserverRecibo,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 09:56:52
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.105.100 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.105.100 is being automatically blocked for 1,800 seconds.",159.192.105.100
+"April 20, 2024 09:54:38",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,srvhsprdblue03.humansite.int,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 09:54:34
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 220.132.135.212 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 220.132.135.212 is being automatically blocked for 1,800 seconds.",220.132.135.212
+"April 20, 2024 09:53:51",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DbserverRecibo,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 09:53:47
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 74.218.29.74 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 74.218.29.74 is being automatically blocked for 1,800 seconds.",74.218.29.74
+"April 20, 2024 09:52:42",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DbserverRecibo,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 09:52:39
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 77.107.131.96 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 77.107.131.96 is being automatically blocked for 1,800 seconds.",77.107.131.96
+"April 20, 2024 09:48:58",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DbserverRecibo,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 09:48:55
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 177.85.224.93 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 177.85.224.93 is being automatically blocked for 1,800 seconds.",177.85.224.93
+"April 20, 2024 09:46:44",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bserverRE-QA,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 09:46:31
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 128.199.181.4 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 128.199.181.4 is being automatically blocked for 1,800 seconds.",128.199.181.4
+"April 20, 2024 09:29:49",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE-QA,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 09:29:35
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 128.22.175.67 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 128.22.175.67 is being automatically blocked for 1,800 seconds.",128.22.175.67
+"April 20, 2024 09:24:41",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,smtpserverhs.ams.local,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 09:24:38
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 218.161.74.135 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 218.161.74.135 is being automatically blocked for 1,800 seconds.",218.161.74.135
+"April 20, 2024 09:21:20",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bserverRE-QA,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 09:21:16
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.105.100 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.105.100 is being automatically blocked for 1,800 seconds.",159.192.105.100
+"April 20, 2024 09:02:42",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bSrvRecibo,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 09:02:39
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 177.85.224.93 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 177.85.224.93 is being automatically blocked for 1,800 seconds.",177.85.224.93
+"April 20, 2024 08:58:17",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bSrvRecibo,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 08:58:14
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.105.100 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.105.100 is being automatically blocked for 1,800 seconds.",159.192.105.100
+"April 20, 2024 08:54:20",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bSrvRecibo,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 08:54:18
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 77.107.131.96 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 77.107.131.96 is being automatically blocked for 1,800 seconds.",77.107.131.96
+"April 20, 2024 08:44:06",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 08:43:58
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 1.174.20.156 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 1.174.20.156 is being automatically blocked for 1,800 seconds.",1.174.20.156
+"April 20, 2024 08:38:02",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DBserverRe-QA,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 08:37:58
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 77.107.131.96 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 77.107.131.96 is being automatically blocked for 1,800 seconds.",77.107.131.96
+"April 20, 2024 08:35:40",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,appserverDev,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 08:35:37
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 74.218.29.74 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 74.218.29.74 is being automatically blocked for 1,800 seconds.",74.218.29.74
+"April 20, 2024 08:26:10",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,srvhsprdblue03.humansite.int,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 08:26:06
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.106.207 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.106.207 is being automatically blocked for 1,800 seconds.",159.192.106.207
+"April 20, 2024 08:13:30",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DBserverRe-QA,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 08:13:15
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 177.85.224.93 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 177.85.224.93 is being automatically blocked for 1,800 seconds.",177.85.224.93
+"April 20, 2024 08:11:59",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,DEV-002-Sb2bi,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 08:11:56
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 1.34.85.243 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 1.34.85.243 is being automatically blocked for 1,800 seconds.",1.34.85.243
+"April 20, 2024 07:56:36",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE-QA,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 07:56:32
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 177.85.224.93 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 177.85.224.93 is being automatically blocked for 1,800 seconds.",177.85.224.93
+"April 20, 2024 07:54:22",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bSrvRecibo,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 07:54:19
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 128.199.181.4 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 128.199.181.4 is being automatically blocked for 1,800 seconds.",128.199.181.4
+"April 20, 2024 07:51:53",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bserverRE-QA,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 07:51:50
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.106.207 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.106.207 is being automatically blocked for 1,800 seconds.",159.192.106.207
+"April 20, 2024 07:51:15",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 07:51:01
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.105.100 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.105.100 is being automatically blocked for 1,800 seconds.",159.192.105.100
+"April 20, 2024 07:45:03",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,AppserverRE,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 07:44:59
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.106.207 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.106.207 is being automatically blocked for 1,800 seconds.",159.192.106.207
+"April 20, 2024 07:29:15",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,SMTPSERVERENL.ams.local,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 07:29:13
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.104.79 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.104.79 is being automatically blocked for 1,800 seconds.",159.192.104.79
+"April 20, 2024 07:26:39",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,srvhsprdblue03.humansite.int,System,hbp00423s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 07:26:35
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 218.161.74.135 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 218.161.74.135 is being automatically blocked for 1,800 seconds.",218.161.74.135
+"April 20, 2024 07:25:25",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,SMTPSERVERENL.ams.local,System,hbp00424s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 07:25:23
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.106.207 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.106.207 is being automatically blocked for 1,800 seconds.",159.192.106.207
+"April 20, 2024 07:17:32",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,Sb2bserverRE-QA,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 07:17:28
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 128.22.175.67 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 128.22.175.67 is being automatically blocked for 1,800 seconds.",128.22.175.67
+"April 20, 2024 07:13:32",Warning,853,Reconnaissance Detected: TCP SYNFIN Scan,,Agent,SMTPSVRCFDINET.ams.local,System,hbp00420s-474,"The Agent/Appliance detected a TCP ""SYNFIN"" port scan attempt. Check the Agent/Appliance Events to see the details of the port scan.
+
+Agent/Appliance Event(s):
+
+Time: April 20, 2024 07:13:30
+Level: Warning
+Event ID: 7003
+Event: TCP SYNFIN Scan
+Description: The computer at IP address 159.192.104.79 sent a packet with both the ""SYN"" and ""FIN"" TCP flags set - an illegal combination. This almost always means it is performing a ""FIN"" scan to determine which ports are open.
+
+Traffic from IP 159.192.104.79 is being automatically blocked for 1,800 seconds.",159.192.104.79

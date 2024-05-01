@@ -1,0 +1,4 @@
+Event,Target,Source IP,Eventos
+Reconnaissance Detected: Network or Port Scan,DEV-002-Sb2bi,104.152.52.206,1
+,srvhsprdblue03.humansite.int,104.152.52.206,1
+Total general,,,2
