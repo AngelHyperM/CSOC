@@ -47,16 +47,16 @@ def limpiar_IP(text):
     return text
 
 def clearConsole():
-    command = "clear" if os.name in ("posix", "linux", "darwin") else "cls"
+    command = "clear" if os.name in ("linux") else "cls"
     os.system(command)
 
 def format_text(text):
-    unique_ips = list(set(text))
+    unique_ips = text.split('\n')
+    unique_ips = list(set(unique_ips))
     unique_ips = "\n".join(unique_ips)
     text = text.replace('.', '[.]').replace('@', '[@]').replace(' ', '')
-    unique_ips = unique_ips.replace('.', '[.]').replace('@', '[@]').replace(' ', '')
-
-    return text, unique_ips
+    unique_ips_fscr = unique_ips.replace('.', '[.]').replace('@', '[@]').replace(' ', '')
+    return text, unique_ips, unique_ips_fscr
 
 def obtener_texto():
     print("Text:")
@@ -80,25 +80,25 @@ def decision(text):
         return 2
     return 0
 
-def print_ip(text, dupli_text, aux_text):
+def print_ip(text, sn_dupli_fscr, aux_text):
     if text.count('\n') <= 8:
         print("IP's Sin Duplicar Ofuscadas:\n")
         print(text)
         print("\n_____________________________________________________________________________________________________________________\n\n")
         print("IP's Originales Sin Duplicar:\n")
-        print(dupli_text)
+        print(sn_dupli_fscr)
         print("\n_____________________________________________________________________________________________________________________\n\n")
         print("IP's Originales:\n")
         print(aux_text)
     else:
-        with open("IPs.txt", "w") as arch1:
-            arch1.write("IP's Ofuscadas:\n")
+        with open("Datos Script.txt", "w") as arch1:
+            arch1.write("Datos Ofuscados:\n")
             arch1.write(text)
             arch1.write("\n_____________________________________________________________________________________________________________________\n\n")
-            arch1.write("IP's Sin Duplicar:\n")
-            arch1.write(dupli_text)
+            arch1.write("Datos Sin Duplicar Ofuscados:\n")
+            arch1.write(sn_dupli_fscr)
             arch1.write("\n_____________________________________________________________________________________________________________________\n\n")
-            arch1.write("IP's Originales:\n")
+            arch1.write("Datos Originales:\n")
             arch1.write(aux_text)
             arch1.write("\n_____________________________________________________________________________________________________________________\n\n")
 
@@ -111,12 +111,12 @@ if __name__ == "__main__":
         dec_Tree = decision(text)
 
         if dec_Tree == 0:
-            text, dupli_text = format_text(text)
-            print_ip(text, dupli_text, aux_text)
+            text, sn_dupli, sn_dupli_fscr = format_text(text)
+            print_ip(text, sn_dupli_fscr, aux_text)
         elif dec_Tree == 1:
             text = limpiar_IP(text)
             aux_text = text
-            text, dupli_text = format_text(text)
-            print_ip(text, dupli_text, aux_text)
+            text, sn_dupli, sn_dupli_fscr = format_text(text)
+            print_ip(text, sn_dupli_fscr, aux_text)
         elif dec_Tree == 2:
             df = data_Excel()
