@@ -1,8 +1,41 @@
 import os
 import subprocess as sp
 import re
-import requests
-import pandas as pd #pip install pandas y pip install openpyxl
+try:
+    import requests
+    import pandas as pd
+    import openpyxl
+except ImportError:
+    from pip._internal import main as pip
+    print("Instalando librerías necesarias...")
+    pip(['install', '--user', 'requests'])
+    print("Librería 'requests' instalada.")
+    pip(['install', '--user', 'pandas'])
+    print("Librería 'pandas' instalada.")
+    pip(['install', '--user', 'openpyxl'])
+    print("Librería 'openpyxl' instalada.")
+    import requests
+    import pandas as pd
+    import openpyxl
+
+def limpiar_IP_Excel(datos_excel, hoja):
+    datos_excel[hoja]["IP Source"] = datos_excel[hoja]["Description"].apply(limpiar_IP)
+    #Agregar caso, si en la IP Source esta vacia es por que es una IPV6, a esta se le debe de aplicar una funcion diferente
+    datos_excel[hoja]["IP Source"] = datos_excel[hoja]["IP Source"].apply(lambda x: x if x else "IPV6")
+    return datos_excel
+
+def encontrar_Reportes(datos_excel):
+    hojas = list(datos_excel.keys())
+
+    for hoja in hojas:
+        if "Event" in datos_excel[hoja].columns:
+            if "Reconnaissance Detected: Computer OS Fingerprint Probe" in datos_excel[hoja]["Event"].values:
+                computer_OS = hoja
+            elif "Reconnaissance Detected: Network or Port Scan" in datos_excel[hoja]["Event"].values:
+                network_Scan = hoja
+            elif "Reconnaissance Detected: TCP SYNFIN Scan" in datos_excel[hoja]["Event"].values:
+                SYNFIN_Scan = hoja
+    return computer_OS, network_Scan, SYNFIN_Scan
 
 def data_Excel():
     nombre_archivo = input("Ingrese el nombre del archivo a leer: ")
@@ -11,9 +44,6 @@ def data_Excel():
 
     try:
         datos_excel = pd.read_excel(ruta_archivo, sheet_name=None)
-        for nombre_hoja, datos_hoja in datos_excel.items():
-            print(f"Datos de la hoja '{nombre_hoja}':")
-            print(datos_hoja)
         return datos_excel
     except FileNotFoundError:
         print("El archivo de Excel no se encontró en la carpeta de descargas.\nBuscando en el directorio actual...")
@@ -23,16 +53,24 @@ def data_Excel():
 
     try:
         datos_excel = pd.read_excel(nombre_archivo, sheet_name=None)
-        for nombre_hoja, datos_hoja in datos_excel.items():
-            print(f"Datos de la hoja '{nombre_hoja}':")
-            print(datos_hoja)
         return datos_excel
     except FileNotFoundError:
-        print("El archivo de Excel no se encontró en el directorio actual.")
+        print("El archivo de Excel no se encontró en el directorio actual.\nBuscando en el escritorio...")
+    
+    ruta_escritorio = os.path.join(os.path.expanduser('~'), 'Desktop')
+    ruta_archivo = os.path.join(ruta_escritorio, nombre_archivo) 
+
+    try:
+        datos_excel = pd.read_excel(ruta_archivo, sheet_name=None)
+        return datos_excel
+    except FileNotFoundError:
+        print("El archivo de Excel no se encontró en el escritorio ni ruta actual del script ni en descargas.")
+        print("Por favor, mueva el archivo a una de las rutas mencionadas e intente nuevamente.")
         return None
 
-def obtener_informacion_ip(ip):
-    url = f"https://api.db-ip.com/v2/free/{ip}"
+def obtener_informacion_ip(ips):
+    api_key_dbip = "f968cfdb294b70521393fadf0827d111859b5684"
+    url = f"https://api.db-ip.com/v2/{api_key_dbip}/{ips}"
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
@@ -120,3 +158,12 @@ if __name__ == "__main__":
             print_ip(text, sn_dupli_fscr, aux_text)
         elif dec_Tree == 2:
             df = data_Excel()
+            print("Libro de Excel Cargado.")
+            computer_OS, network_Scan, SYNFIN_Scan = encontrar_Reportes(df)
+
+            if computer_OS:
+                df = limpiar_IP_Excel(df, computer_OS)
+            if network_Scan:
+                df = limpiar_IP_Excel(df, network_Scan)
+            if SYNFIN_Scan:
+                df = limpiar_IP_Excel(df, SYNFIN_Scan)
