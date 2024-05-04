@@ -1,0 +1,42 @@
+ipAddress,Estatus,,,,,,,ipVersion,hostnames,,,,
+128.199.181.4,Bloqueada,,,,,,,4,[],,,,
+47.107.84.97,Bloqueada,,,,,,,4,[],,,,
+159.192.106.207,No bloqueada,,,,,,,4,['59-126-252-139.hinet-ip.hinet.net'],,,,
+159.192.104.79,No bloqueada,,,,,,,4,[],,,,
+59.126.252.139,No bloqueada,,,,,,,4,[],,,,
+120.211.97.229,No bloqueada,,,,,,,4,['128-22-175-67f2.hyg2.eonet.ne.jp'],,,,
+77.107.131.96,No bloqueada,,,,,,,4,['218-161-74-135.hinet-ip.hinet.net'],,,,
+128.22.175.67,No bloqueada,,,,,,,4,['1-34-85-243.hinet-ip.hinet.net'],,,,
+218.161.74.135,No bloqueada,,,,,,,4,['220-133-20-40.hinet-ip.hinet.net'],,,,
+1.34.85.243,No bloqueada,,,,,,,4,['114-32-100-73.hinet-ip.hinet.net'],,,,
+220.133.20.40,No bloqueada,,,,,,,4,['59-126-37-224.hinet-ip.hinet.net'],,,,
+114.32.100.73,No bloqueada,,,,,,,4,['220-135-113-71.hinet-ip.hinet.net'],,,,
+59.126.37.224,No bloqueada,,,,,,,4,['1-174-20-156.dynamic-ip.hinet.net'],,,,
+220.135.113.71,No bloqueada,,,,,,,4,['220-133-92-196.hinet-ip.hinet.net'],,,,
+1.174.20.156,No bloqueada,,,,,,,4,['gs.173.124.217.95.clients.your-server.de'],,,,
+220.133.92.196,No bloqueada,,,,,,,4,[],,,,
+95.217.124.173,No bloqueada,,,,,,,4,[],,,,
+88.208.52.143,No bloqueada,,,,,,,4,[],,,,
+103.108.90.107,No bloqueada,,,,,,,,,,,,
+5.232.190.228,No bloqueada,,,,,,,,,,,,
+,,,,,,,,,,,,,
+RESULTADOS DE LA CONSULTA,,,,,,,,,,,,,
+ipAddress,isPublic,isWhitelisted,abuseConfidenceScore,countryCode,usageType,isp,domain,totalReports,numDistinctUsers,lastReportedAt,isTor,categories,description
+159.192.106.207,True,False,100,TH,,CAT Telecom Public Company Ltd,cattelecom.com,2932,31,2024-05-04T22:40:08+00:00,False,Port Scan,Scanning for open ports and vulnerable services.
+159.192.104.79,True,False,100,TH,,CAT Telecom Public Company Ltd,cattelecom.com,2606,45,2024-05-04T22:40:08+00:00,False,Port Scan,Scanning for open ports and vulnerable services.
+59.126.252.139,True,False,100,TW,,Chunghwa Telecom Co. Ltd.,cht.com.tw,2340,30,2024-05-04T22:40:08+00:00,False,Port Scan,Scanning for open ports and vulnerable services.
+120.211.97.229,True,False,95,CN,,China Mobile Communications Corporation,chinamobileltd.com,305,24,2024-05-04T12:20:02+00:00,False,Hacking,Hacking
+77.107.131.96,True,False,100,GB,Data Center/Web Hosting/Transit,Daisy Corporate Services Trading Ltd,daisygroupplc.com,336,49,2024-05-04T17:31:22+00:00,False,Port Scan,Scanning for open ports and vulnerable services.
+128.22.175.67,True,False,0,JP,,OPTAGE Inc.,optage.co.jp,5,4,2024-02-10T08:05:29+00:00,False,No report,La IP no se encuentra catalogada como maliciosa
+218.161.74.135,True,False,73,TW,,Chunghwa Telecom Co. Ltd.,cht.com.tw,246,18,2024-05-04T21:25:08+00:00,False,Port Scan,Scanning for open ports and vulnerable services.
+1.34.85.243,True,False,85,TW,,Chunghwa Telecom Co. Ltd.,cht.com.tw,307,19,2024-05-04T10:38:46+00:00,False,Port Scan,Scanning for open ports and vulnerable services.
+220.133.20.40,True,False,84,TW,,Chunghwa Telecom Co. Ltd.,cht.com.tw,484,20,2024-05-04T22:30:04+00:00,False,Port Scan,Scanning for open ports and vulnerable services.
+114.32.100.73,True,False,100,TW,,Chunghwa Telecom Co. Ltd.,cht.com.tw,1915,21,2024-05-04T22:40:09+00:00,False,Port Scan,Scanning for open ports and vulnerable services.
+59.126.37.224,True,False,79,TW,,Chunghwa Telecom Co. Ltd.,cht.com.tw,249,18,2024-05-04T21:16:07+00:00,False,Port Scan,Scanning for open ports and vulnerable services.
+220.135.113.71,True,False,80,TW,,Chunghwa Telecom Co. Ltd.,cht.com.tw,286,19,2024-05-04T19:34:30+00:00,False,Hacking,Hacking
+1.174.20.156,True,False,77,TW,,Chunghwa Telecom Co. Ltd.,cht.com.tw,253,18,2024-05-04T21:15:55+00:00,False,Port Scan,Scanning for open ports and vulnerable services.
+220.133.92.196,True,False,100,TW,,Chunghwa Telecom Co. Ltd.,cht.com.tw,1847,21,2024-05-04T22:40:05+00:00,False,Port Scan,Scanning for open ports and vulnerable services.
+95.217.124.173,True,False,67,FI,Data Center/Web Hosting/Transit,Hetzner Online GmbH,hetzner.de,20,13,2024-05-04T21:31:01+00:00,False,Port Scan,Scanning for open ports and vulnerable services.
+88.208.52.143,True,False,83,NL,Data Center/Web Hosting/Transit,DataWeb Global Group B.V.,datawebglobalgroup.com,23,17,2024-05-04T21:16:01+00:00,False,Port Scan,Scanning for open ports and vulnerable services.
+103.108.90.107,True,False,19,BD,Fixed Line ISP,B.K.B Network,bkbnetwork.net,3,3,2024-05-04T02:12:17+00:00,False,Brute-Force,"Credential brute-force attacks on webpage logins and services like SSH, FTP, SIP, SMTP, RDP, etc."
+5.232.190.228,True,,0,IR,Fixed Line ISP,Telecommunication Company of Khorasan Shomali,tci.ir,0,0,,False,No report,La IP no se encuentra catalogada como maliciosa

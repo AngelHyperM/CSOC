@@ -10,7 +10,7 @@ def crear_Tabla_Reconocimiento(datos_excel, hoja, hoja_name):
     datos = datos_excel[hoja][["Time", "Level", "Event ID", "Event", "Tag(s)", "Event Origin", "Target", "Action By", "Manager", "Description", "IP Source"]]
     
     resumen = datos.groupby(['Event', 'Target']).agg({
-        'IP Source': lambda x: '\n'.join(set(x.dropna())),  # Concatenamos IPs únicas, eliminando NaN
+        'IP Source': lambda x: ', '.join(set(x.dropna())),  # Concatenamos IPs únicas, eliminando NaN
         'Event ID': 'count'  # Contamos la cantidad de eventos por Target
     }).reset_index()
 
@@ -140,7 +140,7 @@ def decision(text):
 
     if aux == "LIMPIAR":
         return 1
-    elif aux == "RECONOCIMIENTO":
+    elif aux == "RECON":
         return 2
     return 0
 
@@ -215,4 +215,4 @@ if __name__ == "__main__":
                     
                     # Aplicar formato de ajuste de texto a la columna de 'Source IP'
                     wrap_format = workbook.add_format({'text_wrap': True})
-                    worksheet.set_column('C:C', None, wrap_format)  # Asumiendo que 'Source IP' es la columna C
+                    worksheet.set_column('C:C', None, wrap_format)
