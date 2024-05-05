@@ -10,22 +10,25 @@ def crear_Tabla_Reconocimiento(datos_excel, hoja, hoja_name):
     # Extraemos los datos relevantes de la hoja específica
     datos = datos_excel[hoja][["Time", "Level", "Event ID", "Event", "Tag(s)", "Event Origin", "Target", "Action By", "Manager", "Description", "IP Source"]]
     
-    resumen = datos.groupby(['Event', 'Target', 'IP Source']).agg({
+    resumen = datos.groupby(['Event', 'Level', 'Target', 'IP Source']).agg({
         'Event ID': 'count'  # Contamos la cantidad de eventos por IP Source y Target
     }).reset_index()
 
-    resumen.columns = ['Event', 'Target', 'Source IP', 'Eventos']
+    resumen.columns = ['Event', 'Level', 'Target', 'Source IP', 'Eventos']
     
     name_target_first = resumen['Target'][0]
     name_event_first = resumen['Event'][0]
+    name_level_first = resumen['Level'][0]
     for i in range(1, len(resumen['Target'])):
         if name_target_first == resumen['Target'][i]:
-            resumen.loc[i, 'Target'] = " "
+            resumen.loc[i, 'Target'] = ""
         else:
             name_target_first = resumen['Target'][i]
         resumen.loc[i, 'Event'] = ""
+        resumen.loc[i, 'Level'] = ""
 
-    resumen.loc[0, 'Event'] = name_event_first 
+    resumen.loc[0, 'Event'] = name_event_first
+    resumen.loc[0, 'Level'] = name_level_first 
     resumen.loc[len(resumen), 'Event'] = "Total de Eventos"
     resumen.loc[len(resumen)-1, 'Eventos'] = resumen['Eventos'].sum()
     
@@ -153,35 +156,41 @@ def decision(text):
 
     if aux == "LIMPIAR":
         return 1
-    elif aux == "RECON":
+    elif aux == "PUERTOS":
         return 2
     return 0
 
-def print_ip(text, sn_dupli_fscr, aux_text):
+def print_ip(text, sn_dupli_fscr, sn_dupli, aux_text):
     if text.count('\n') <= 10:
         print("Datos Ofuscados:\n")
         print(text)
-        print("\n_____________________________________________________________________________________________________________________\n\n")
+        print("_____________________________________________________________________________________________________________________\n")
         print("Datos Sin Duplicar Ofuscados:\n")
         print(sn_dupli_fscr)
-        print("\n_____________________________________________________________________________________________________________________\n\n")
+        print("\n_____________________________________________________________________________________________________________________\n")
+        print("Datos Sin Duplicar y Sin Ofuscar:\n")
+        print(sn_dupli)
+        print("\n_____________________________________________________________________________________________________________________\n")
         print("Datos Originales:\n")
         print(aux_text)
-        print("\n_____________________________________________________________________________________________________________________\n\n")
+        print("_____________________________________________________________________________________________________________________\n")
 
     else:
-        with open("Datos Script.txt", "w") as arch1:
+        with open("Datos_Script.txt", "w") as arch1:
             arch1.write("Datos Ofuscados:\n")
             arch1.write(text)
-            arch1.write("\n_____________________________________________________________________________________________________________________\n\n")
+            arch1.write("_____________________________________________________________________________________________________________________\n")
             arch1.write("Datos Sin Duplicar Ofuscados:\n")
             arch1.write(sn_dupli_fscr)
-            arch1.write("\n_____________________________________________________________________________________________________________________\n\n")
+            arch1.write("\n_____________________________________________________________________________________________________________________\n")
+            arch1.write("Datos Sin Duplicar Sin Ofuscar:\n")
+            arch1.write(sn_dupli)
+            arch1.write("\n_____________________________________________________________________________________________________________________\n")
             arch1.write("Datos Originales:\n")
             arch1.write(aux_text)
-            arch1.write("\n_____________________________________________________________________________________________________________________\n\n")
+            arch1.write("_____________________________________________________________________________________________________________________\n")
 
-        sp.run(["start", "Datos Script.txt"], shell=True)
+        sp.run(["start", "Datos_Script.txt"], shell=True)
 
 if __name__ == "__main__":
     while True:
@@ -191,14 +200,18 @@ if __name__ == "__main__":
 
         if dec_Tree == 0:
             text, sn_dupli, sn_dupli_fscr = format_text(text)
-            print_ip(text, sn_dupli_fscr, aux_text)
+            print_ip(text, sn_dupli_fscr, sn_dupli, aux_text)
+            text, sn_dupli, sn_dupli_fscr, aux_text = None, None, None, None
+
         elif dec_Tree == 1:
             print("Limpieza de IP's")
             text = obtener_texto()
             text = limpiar_IPV4(text)
             aux_text = text
             text, sn_dupli, sn_dupli_fscr = format_text(text)
-            print_ip(text, sn_dupli_fscr, aux_text)
+            print_ip(text, sn_dupli_fscr, sn_dupli, aux_text)
+            text, sn_dupli, sn_dupli_fscr, aux_text = None, None, None, None
+
         elif dec_Tree == 2:
             print("Reconocimiento de Puertos")
             df = data_Excel()
@@ -224,24 +237,24 @@ if __name__ == "__main__":
             with open("IPs.txt", "w") as arch1:
                 arch1.write(ips_Total)
             #Se guardaran todos los cambios en el archivo de excel
-            with pd.ExcelWriter("Reporte AMS.xlsx", engine='xlsxwriter') as writer:
+            with pd.ExcelWriter("Reporte_AMS.xlsx", engine='xlsxwriter') as writer:
                 for hoja in df.keys():
                     df[hoja].to_excel(writer, sheet_name=hoja, index=False)
                     workbook  = writer.book
                     worksheet = writer.sheets[hoja]
                     
                     # Aplicar formato de ajuste de texto a la columna de 'Source IP'
-                    wrap_format = workbook.add_format({'text_wrap': True})
-                    worksheet.set_column('C:C', None, wrap_format)
+                    #wrap_format = workbook.add_format({'text_wrap': True})
+                    #worksheet.set_column('C:C', None, wrap_format)
 
             if os.name == 'nt':  # Windows
-                os.system(f'start "" "Reporte AMS.xlsx"')
+                os.system(f'start "" "Reporte_AMS.xlsx"')
             elif os.name == 'posix':  # Linux o macOS
-                os.system(f'open "Reporte AMS.xlsx"')
+                os.system(f'open "Reporte_AMS.xlsx"')
             else:
                 print("No se puede abrir el archivo automáticamente en este sistema operativo.")
             sp.run(["start", "IPs.txt"], shell=True)
 
             #Variables a none
             computer_OS, network_Scan, SYNFIN_Scan = None, None, None
-            df, ips_Total = None, None
+            df, ips_Total, ip_comp, ip_netw, ip_synf = None, None, None, None, None

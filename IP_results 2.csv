@@ -1,0 +1,7 @@
+ipAddress,isPublic,ipVersion,isWhitelisted,abuseConfidenceScore,countryCode,usageType,isp,domain,hostnames,totalReports,numDistinctUsers,lastReportedAt,isTor
+10.223.201.161,False,4,,0,,Reserved,Private IP Address LAN,,[],0,0,,False
+54.68.97.123,True,4,,0,US,Data Center/Web Hosting/Transit,Amazon Technologies Inc.,amazon.com,['ec2-54-68-97-123.us-west-2.compute.amazonaws.com'],0,0,,False
+44.225.240.147,True,4,,0,US,Data Center/Web Hosting/Transit,Amazon.com Inc.,amazon.com,['ec2-44-225-240-147.us-west-2.compute.amazonaws.com'],0,0,,False
+10.219.200.11,False,4,,0,,Reserved,Private IP Address LAN,,[],0,0,,False
+23.215.40.237,True,4,,0,US,Content Delivery Network,Akamai Technologies Inc.,akamai.com,['a23-215-40-237.deploy.static.akamaitechnologies.com'],0,0,,False
+10.219.200.12,False,4,,0,,Reserved,Private IP Address LAN,,[],0,0,,False
