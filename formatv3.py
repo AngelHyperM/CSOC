@@ -3,22 +3,35 @@ import subprocess as sp
 import re
 import requests # pip install requests
 import pandas as pd # pip install pandas
-#Librerias adiciones openpyxl pip install xlsxwriter
+#Librerias adiciones xlsxwriter pip install xlsxwriter
+#Librerias adiciones openpyxl pip install openpyxl
 
 def crear_Tabla_Reconocimiento(datos_excel, hoja, hoja_name):
     # Extraemos los datos relevantes de la hoja específica
     datos = datos_excel[hoja][["Time", "Level", "Event ID", "Event", "Tag(s)", "Event Origin", "Target", "Action By", "Manager", "Description", "IP Source"]]
     
-    resumen = datos.groupby(['Event', 'Target']).agg({
-        'IP Source': lambda x: ', '.join(set(x.dropna())),  # Concatenamos IPs únicas, eliminando NaN
-        'Event ID': 'count'  # Contamos la cantidad de eventos por Target
+    resumen = datos.groupby(['Event', 'Target', 'IP Source']).agg({
+        'Event ID': 'count'  # Contamos la cantidad de eventos por IP Source y Target
     }).reset_index()
 
     resumen.columns = ['Event', 'Target', 'Source IP', 'Eventos']
     
+    name_target_first = resumen['Target'][0]
+    name_event_first = resumen['Event'][0]
+    for i in range(1, len(resumen['Target'])):
+        if name_target_first == resumen['Target'][i]:
+            resumen.loc[i, 'Target'] = " "
+        else:
+            name_target_first = resumen['Target'][i]
+        resumen.loc[i, 'Event'] = ""
+
+    resumen.loc[0, 'Event'] = name_event_first 
+    resumen.loc[len(resumen), 'Event'] = "Total de Eventos"
+    resumen.loc[len(resumen)-1, 'Eventos'] = resumen['Eventos'].sum()
+    
     datos_excel[hoja_name] = resumen
 
-    print(f"Tabla reporte {hoja_name} creada.")
+    print(f"Tabla {hoja_name} creada.")
 
     return datos_excel
 
@@ -115,12 +128,12 @@ def clearConsole():
     os.system(command)
 
 def format_text(text):
-    unique_ips = text.split('\n')
-    unique_ips = list(set(unique_ips))
-    unique_ips = "\n".join(unique_ips)
+    sn_dupli = text.split('\n')
+    sn_dupli = list(set(sn_dupli))
+    sn_dupli = "\n".join(sn_dupli)
     text = text.replace('.', '[.]').replace('@', '[@]').replace(' ', '')
-    unique_ips_fscr = unique_ips.replace('.', '[.]').replace('@', '[@]').replace(' ', '')
-    return text, unique_ips, unique_ips_fscr
+    sn_dupli_fscr = sn_dupli.replace('.', '[.]').replace('@', '[@]').replace(' ', '')
+    return text, sn_dupli, sn_dupli_fscr
 
 def obtener_texto():
     print("Text:")
@@ -145,15 +158,17 @@ def decision(text):
     return 0
 
 def print_ip(text, sn_dupli_fscr, aux_text):
-    if text.count('\n') <= 8:
-        print("IP's Sin Duplicar Ofuscadas:\n")
+    if text.count('\n') <= 10:
+        print("Datos Ofuscados:\n")
         print(text)
         print("\n_____________________________________________________________________________________________________________________\n\n")
-        print("IP's Originales Sin Duplicar:\n")
+        print("Datos Sin Duplicar Ofuscados:\n")
         print(sn_dupli_fscr)
         print("\n_____________________________________________________________________________________________________________________\n\n")
-        print("IP's Originales:\n")
+        print("Datos Originales:\n")
         print(aux_text)
+        print("\n_____________________________________________________________________________________________________________________\n\n")
+
     else:
         with open("Datos Script.txt", "w") as arch1:
             arch1.write("Datos Ofuscados:\n")
@@ -166,7 +181,7 @@ def print_ip(text, sn_dupli_fscr, aux_text):
             arch1.write(aux_text)
             arch1.write("\n_____________________________________________________________________________________________________________________\n\n")
 
-        sp.run(["start", "IPs.txt"], shell=True)
+        sp.run(["start", "Datos Script.txt"], shell=True)
 
 if __name__ == "__main__":
     while True:
@@ -187,8 +202,10 @@ if __name__ == "__main__":
         elif dec_Tree == 2:
             print("Reconocimiento de Puertos")
             df = data_Excel()
+
             if not df:
                 continue
+            
             print("Libro de Excel Cargado.")
             computer_OS, network_Scan, SYNFIN_Scan = encontrar_Reportes(df)
 
@@ -216,3 +233,15 @@ if __name__ == "__main__":
                     # Aplicar formato de ajuste de texto a la columna de 'Source IP'
                     wrap_format = workbook.add_format({'text_wrap': True})
                     worksheet.set_column('C:C', None, wrap_format)
+
+            if os.name == 'nt':  # Windows
+                os.system(f'start "" "Reporte AMS.xlsx"')
+            elif os.name == 'posix':  # Linux o macOS
+                os.system(f'open "Reporte AMS.xlsx"')
+            else:
+                print("No se puede abrir el archivo automáticamente en este sistema operativo.")
+            sp.run(["start", "IPs.txt"], shell=True)
+
+            #Variables a none
+            computer_OS, network_Scan, SYNFIN_Scan = None, None, None
+            df, ips_Total = None, None

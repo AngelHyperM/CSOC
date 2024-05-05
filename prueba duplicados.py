@@ -74,5 +74,21 @@ def crear_Tabla_Reconocimiento(datos_excel, hoja, hoja_name):
 
     return datos_excel
 
+def crear_Tabla_Reconocimiento(datos_excel, hoja, hoja_name):#Mejo
+    # Extraemos los datos relevantes de la hoja específica
+    datos = datos_excel[hoja][["Time", "Level", "Event ID", "Event", "Tag(s)", "Event Origin", "Target", "Action By", "Manager", "Description", "IP Source"]]
+    
+    resumen = datos.groupby(['Event', 'Target', 'IP Source']).agg({
+        'Event ID': 'count'  # Contamos la cantidad de eventos por IP Source y Target
+    }).reset_index()
+
+    resumen.columns = ['Event', 'Target', 'Source IP', 'Eventos']
+    
+    datos_excel[hoja_name] = resumen
+
+    print(f"Tabla reporte {hoja_name} creada.")
+
+    return datos_excel
+
 texto = obtener_texto()
 print(extraer_ipv6(texto))
