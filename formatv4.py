@@ -54,6 +54,7 @@ def estilo_Reportes(df, writer, hoja):
             if pd.notna(value):
                 worksheet.write(f'C{index + 2}', value, merge_format)
     worksheet.merge_range(f"A{last_row_ip+1}:D{last_row_ip+1}", df.loc[last_row_ip - 1, 'Event'], bold_blue_format)
+    worksheet.write(f'E{last_row_ip+1}', df.loc[last_row_ip - 1, 'Eventos'], bold_blue_format)
 
     non_empty_rows = df[df['Descripcion'] != ''].index
     for i, index in enumerate(non_empty_rows):
@@ -73,8 +74,38 @@ def estilo_Reportes(df, writer, hoja):
         else:
             if pd.notna(value):
                 worksheet.write(f'G{index + 2}', value, merge_format)
-    
 
+    for index in df[df['Source IP'] != ''].index:
+        try:
+            valores_IP = df.loc[index, "Source IP"]
+            valores_Evento = df.loc[index, "Eventos"]
+            worksheet.write(f'D{index + 2}', valores_IP, merge_format)
+            worksheet.write(f'E{index + 2}', valores_Evento, merge_format)
+        except:
+            continue
+
+    for index in df[df['Informacion'] != ''].index:
+        try:
+            valores_Info = df.loc[index, "Informacion"]
+            worksheet.write(f'H{index + 2}', valores_Info, merge_format)
+        except:
+            continue
+
+def crear_Tabla_IPs(datos_excel, ips_Total_Data, ips_Total):
+    ips_Total = ips_Total.split(',')
+    ips_Total_Data = pd.DataFrame(ips_Total_Data).T
+    # Crear una hoja nueva en el archivo de Excel
+    datos_excel["Reporte IPs"] = pd.DataFrame(columns='')
+    
+    # Iterar sobre las columnas de ips_Total_Data y agregar cada columna al DataFrame datos_excel["Reporte IPs"]
+    for column_name, column_data in ips_Total_Data.items():
+        # Agregar la columna al DataFrame datos_excel["Reporte IPs"]
+        datos_excel["Reporte IPs"][column_name] = column_data
+
+    datos_excel["Reporte IPs"] = datos_excel["Reporte IPs"][['', 'countryName', 'stateProv', 'district', 'isp', 'threatLevel', 'threatDetails', 'isCrawler', 'isProxy']].reset_index(drop=True)
+    #datos_excel["Reporte IPs"]["ipAddress"] = ips_Total_Data.keys()
+    #print("Tabla Reporte IPs creada.")
+    print(ips_Total_Data.keys())
 
 def crear_Tabla_Reconocimiento(datos_excel, hoja, hoja_name):
     # Extraemos los datos relevantes de la hoja específica
@@ -169,71 +200,58 @@ def data_Excel():
     ruta_descargas = os.path.join(os.path.expanduser('~'), 'Downloads')
     ruta_archivo = os.path.join(ruta_descargas, nombre_archivo)
 
-    #Ver extension del archivo
+    # Ver extensión del archivo
     if nombre_archivo.endswith('.xlsx'):
         try:
             datos_excel = pd.read_excel(ruta_archivo, sheet_name=None)
             return datos_excel
         except FileNotFoundError:
-            print("El archivo de Excel no se encontró en la carpeta de descargas.\nBuscando en el directorio actual...")
-        
-        ruta_script = os.path.dirname(os.path.abspath(__file__))
-        ruta_archivo = os.path.join(ruta_script, nombre_archivo)
-
-        try:
-            datos_excel = pd.read_excel(nombre_archivo, sheet_name=None)
-            return datos_excel
-        except FileNotFoundError:
-            print("El archivo de Excel no se encontró en el directorio actual.\nBuscando en el escritorio...")
-        
-        ruta_escritorio = os.path.join(os.path.expanduser('~'), 'Desktop')
-        ruta_archivo = os.path.join(ruta_escritorio, nombre_archivo) 
-
-        try:
-            datos_excel = pd.read_excel(ruta_archivo, sheet_name=None)
-            return datos_excel
-        except FileNotFoundError:
-            print("El archivo de Excel no se encontró en el escritorio ni ruta actual del script ni en descargas.")
-            print("Por favor, mueva el archivo a una de las rutas mencionadas e intente nuevamente.")
-            return None
+            print("El archivo de Excel no se encontró en la carpeta de descargas.\nBuscando en otras ubicaciones...")
         
     elif nombre_archivo.endswith('.csv'):
         try:
-            datos_excel = pd.read_csv(ruta_archivo, sheet_name=None)
-            return datos_excel
+            datos_csv = pd.read_csv(ruta_archivo)
+            return {"Hoja1": datos_csv}  # Devuelve un diccionario con una hoja llamada "Hoja1" para mantener la consistencia
         except FileNotFoundError:
-            print("El archivo CSV no se encontró en la carpeta de descargas.\nBuscando en el directorio actual...")
-        
-        ruta_script = os.path.dirname(os.path.abspath(__file__))
-        ruta_archivo = os.path.join(ruta_script, nombre_archivo)
+            print("El archivo CSV no se encontró en la carpeta de descargas.\nBuscando en otras ubicaciones...")
 
-        try:
-            datos_excel = pd.read_csv(nombre_archivo, sheet_name=None)
-            return datos_excel
-        except FileNotFoundError:
-            print("El archivo CSV no se encontró en el directorio actual.\nBuscando en el escritorio...")
-        
-        ruta_escritorio = os.path.join(os.path.expanduser('~'), 'Desktop')
-        ruta_archivo = os.path.join(ruta_escritorio, nombre_archivo) 
+    # Si no es un archivo Excel ni un archivo CSV o no se encontró en las ubicaciones habituales, se realiza una búsqueda más exhaustiva.
+    rutas_busqueda = [os.path.dirname(os.path.abspath(__file__)), os.path.join(os.path.expanduser('~'), 'Desktop')]
+    for ruta in rutas_busqueda:
+        ruta_archivo = os.path.join(ruta, nombre_archivo)
+        if nombre_archivo.endswith('.xlsx'):
+            try:
+                datos_excel = pd.read_excel(ruta_archivo, sheet_name=None)
+                return datos_excel
+            except FileNotFoundError:
+                print(f"El archivo de Excel no se encontró en {ruta}.")
+        elif nombre_archivo.endswith('.csv'):
+            try:
+                datos_csv = pd.read_csv(ruta_archivo)
+                return {"Hoja1": datos_csv}  # Devuelve un diccionario con una hoja llamada "Hoja1" para mantener la consistencia
+            except FileNotFoundError:
+                print(f"El archivo CSV no se encontró en {ruta}.")
 
-        try:
-            datos_excel = pd.read_csv(ruta_archivo, sheet_name=None)
-            return datos_excel
-        except FileNotFoundError:
-            print("El archivo CSV no se encontró en el escritorio ni ruta actual del script ni en descargas.")
-            print("Por favor, mueva el archivo a una de las rutas mencionadas e intente nuevamente.")
-            return None
-    else:
-        print("El archivo no es un archivo de Excel o CSV.")
-        return None
+    print(f"No se encontró el archivo {nombre_archivo} en las ubicaciones habituales.")
+    print("Por favor, mueva el archivo a una de las rutas mencionadas e intente nuevamente.")
+    return None
+
+def filtrar_IPs(text):
+    ips = text.split(',')
+    ips = [ip.strip() for ip in ips]
+    subredes_privadas = ['192.168.', '10.', '172.16.', '172.17.', '172.18.', '172.19.', '172.20.', '172.21.', '172.22.', '172.23.', '172.24.', '172.25.', '172.26.', '172.27.', '172.28.', '172.29.', '172.30.', '172.31.', '127.']
+
+    ips = [ip for ip in ips if not any(ip.startswith(subred) for subred in subredes_privadas)]
+    
+    return ','.join(ips)
 
 def informacion_ip(ipAddress):
     api_key_dbip = "f968cfdb294b70521393fadf0827d111859b5684"
-    propertyName = "countryName,city,latitude,longitude,isp,organization,asNumber,asName"
-    url = f"http://api.db-ip.com/v2/{api_key_dbip}/as/{ipAddress}/{propertyName}"
+    url = f"http://api.db-ip.com/v2/{api_key_dbip}/{ipAddress}"
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
+        print("Información de las IP's obtenida.")
         return data
     else:
         print("Error al obtener información de la IP:", response.status_code)
@@ -345,12 +363,13 @@ if __name__ == "__main__":
             print("Reconocimiento de Puertos")
             df = data_Excel()
 
-            if not df:
+            if df is None:
                 continue
-            
+
             print("Libro de Excel Cargado.")
             computer_OS, network_Scan, SYNFIN_Scan = encontrar_Reportes(df)
 
+            ip_comp, ip_netw, ip_synf = [], [], []
             if computer_OS:
                 df, ip_comp = IP_Excel_Reconocimiento(df, computer_OS)
                 df = crear_Tabla_Reconocimiento(df, computer_OS, "Reporte Computer OS")
@@ -363,19 +382,20 @@ if __name__ == "__main__":
 
             ips_Total = ip_comp + ip_netw + ip_synf
             ips_Total = eliminar_duplicados(ips_Total).split('\n')
+            ips_Total = filtrar_IPs(','.join(ips_Total))
+            ips_Total_Data = informacion_ip(ips_Total)
+            crear_Tabla_IPs(df, ips_Total_Data, ips_Total)
 
-            #
-            
-            with pd.ExcelWriter("Reporte_AMS.xlsx", engine='xlsxwriter') as writer:
+            print("Aplicando Estilo...")
+            with pd.ExcelWriter("Reporte_Puertos.xlsx", engine='xlsxwriter') as writer:
                 for hoja in df.keys():
                     df[hoja].to_excel(writer, sheet_name=hoja, index=False)
+                for hoja in writer.sheets:
+                    if hoja == "Reporte Computer OS" or hoja == "Reporte Network" or hoja == "Reporte SYNFIN":
+                        estilo_Reportes(df[hoja], writer, hoja)
 
-                for hoja in df.keys():
-                    if hoja in ["Reporte Computer OS", "Reporte Network", "Reporte SYNFIN"]:
-                        estilo_Reportes(df[hoja], writer, hoja) 
-                    
             if os.name == 'nt':  # Windows
-                os.system(f'start "" "Reporte_AMS.xlsx"')
+                os.system(f'start "" "Reporte_Puertos.xlsx"')
             elif os.name == 'posix':  # Linux o macOS
                 os.system(f'open "Reporte_AMS.xlsx"')
             else:
