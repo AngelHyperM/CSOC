@@ -155,10 +155,10 @@ def crear_Tabla_Reconocimiento(datos_excel, hoja, hoja_name):
         else:
             resumen.loc[i, 'Informacion'] = unicos_IP[i-tam]
 
-    resumen.loc[i, 'Descripcion'] = 'Detección:'
-    resumen.loc[i, 'Informacion'] = name_event_first
-    resumen.loc[i+1, 'Descripcion'] = 'Eventos:'
-    resumen.loc[i+1, 'Informacion'] = (resumen['Eventos'].sum())/2
+    resumen.loc[i+1, 'Descripcion'] = 'Detección:'
+    resumen.loc[i+1, 'Informacion'] = name_event_first
+    resumen.loc[i+2, 'Descripcion'] = 'Eventos:'
+    resumen.loc[i+2, 'Informacion'] = (resumen['Eventos'].sum())/2
     
     datos_excel[hoja_name] = resumen
     print(f"Tabla {hoja_name} creada.")
@@ -235,6 +235,9 @@ def data_Excel():
     print(f"No se encontró el archivo {nombre_archivo} en las ubicaciones habituales.")
     print("Por favor, mueva el archivo a una de las rutas mencionadas e intente nuevamente.")
     return None
+
+def IPs_Bloqueadas(text):
+    print("Hola")
 
 def filtrar_IPs(text):
     ips = text.split(',')
@@ -384,7 +387,9 @@ if __name__ == "__main__":
             ips_Total = eliminar_duplicados(ips_Total).split('\n')
             ips_Total = filtrar_IPs(','.join(ips_Total))
             ips_Total_Data = informacion_ip(ips_Total)
-            crear_Tabla_IPs(df, ips_Total_Data, ips_Total)
+
+            if ips_Total_Data is not None:
+                crear_Tabla_IPs(df, ips_Total_Data, ips_Total)
 
             print("Aplicando Estilo...")
             with pd.ExcelWriter("Reporte_Puertos.xlsx", engine='xlsxwriter') as writer:
