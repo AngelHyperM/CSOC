@@ -3,6 +3,7 @@ import subprocess as sp
 import re
 import requests # pip install requests
 import pandas as pd # pip install pandas
+from Comparar import compararv3 as comp
 #Libreria adicional xlsxwriter pip install xlsxwriter
 #Libreria adicional openpyxl pip install openpyxl
 #pip install openpyxl xlsxwriter pandas requests
