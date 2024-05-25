@@ -3,8 +3,8 @@ import socket
 import struct
 
 def comparar_IPs(IPs):
-    ruta = r"Comparar\Blacklist.csv"
-    ruta2 = r"Comparar\Num_Rows.txt"
+    ruta = r"Code\Blacklist.csv"
+    ruta2 = r"Code\Num_Rows.txt"
     df = pd.read_csv(ruta)
     num_rows_Black = df.shape[0]
     num_rows = open(ruta2, "r").read()
@@ -22,7 +22,7 @@ def comparar_IPs(IPs):
     return busqueda_binaria(IPs)
 
 def busqueda_binaria(IPs):
-    ruta = r"Comparar\Blacklist_Merge.csv"
+    ruta = r"Code\Blacklist_Merge.csv"
     df = pd.read_csv(ruta)
     ip_Status_Bloqueadas = []
     ip_Status_NO_Bloqueadas = []
@@ -53,7 +53,7 @@ def ip_to_int(ip):
         return None
 
 def merge_ip(df):
-    ruta_csv = r"Comparar\Blacklist_Merge.csv"
+    ruta_csv = r"Code\Blacklist_Merge.csv"
 
     # Convierte las direcciones IP en enteros y crea una nueva columna
     df['ip_int'] = df['IP'].apply(lambda x: ip_to_int(x) if pd.notna(x) else None)

@@ -1,12 +1,10 @@
 import os
 import subprocess as sp
 import re
-import requests # pip install requests
-import pandas as pd # pip install pandas
-from Comparar import compararv3 as comp
-#Libreria adicional xlsxwriter pip install xlsxwriter
-#Libreria adicional openpyxl pip install openpyxl
-#pip install openpyxl xlsxwriter pandas requests
+import requests
+import pandas as pd
+from Code.Blacklist import compararv3 as cmpv3
+#pip install openpyxl xlsxwriter pandas requests //Librerias adicionales    
 
 def estilo_Reportes(df, writer, hoja):
     workbook = writer.book
@@ -387,7 +385,11 @@ if __name__ == "__main__":
             ips_Total = ip_comp + ip_netw + ip_synf
             ips_Total = eliminar_duplicados(ips_Total).split('\n')
             ips_Total = filtrar_IPs(','.join(ips_Total))
-            ips_Total_Data = informacion_ip(ips_Total)
+            #ips_Bloqueadas, ips_NO_Bloqueadas = cmpv3.comparar_IPs(ips_Total)
+            #print("IP's Bloqueadas:", ips_Bloqueadas)
+            #print("IP's NO Bloqueadas:", ips_NO_Bloqueadas)
+            #ips_Total_Data = informacion_ip(ips_Total)
+            ips_Total_Data = None
 
             if ips_Total_Data is not None:
                 crear_Tabla_IPs(df, ips_Total_Data, ips_Total)
