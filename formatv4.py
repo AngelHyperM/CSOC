@@ -4,7 +4,7 @@ import re
 import requests
 import pandas as pd
 from Code.Blacklist import compararv3 as cmpv3
-#pip install openpyxl xlsxwriter pandas requests //Librerias adicionales    
+#pip install openpyxl xlsxwriter pandas requests //Librerias adicionales
 
 def estilo_Reportes(df, writer, hoja):
     workbook = writer.book
